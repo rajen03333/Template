@@ -1,0 +1,264 @@
+body,
+div,
+form,
+input,
+select,
+textarea,
+label {
+  outline: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  color: #000000;
+  line-height: 22px;
+}
+
+h1 {
+  position: absolute;
+  font-size: 60px;
+  color: #000000;
+  z-index: 2;
+  line-height: 83px;
+  top: 30px;
+}
+
+textarea {
+  width: calc(100% - 12px);
+}
+
+.testbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  z-index: -10;
+}
+
+form {
+  width: 100%;
+  padding-top: 10px !important;
+  padding: 20px;
+  border-radius: 6px;
+  background: #fff;
+  /* box-shadow: 0 0 8px; */
+}
+
+input,
+select,
+textarea {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input {
+  width: calc(100% - 10px);
+  padding: 5px;
+}
+
+textarea {
+  width: 700px;
+  padding: 5px;
+}
+.dialog-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5px solid black;
+}
+.dialog-clsbtn {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border: none;
+}
+.dialog-closeIcon {
+  color: #000000 !important;
+}
+.react-datepicker-wrapper,
+.react-datepicker__input-container,
+.react-datepicker__input-container input {
+  display: block;
+  width: 100% !important;
+}
+.react-datepicker-popper {
+  margin-top: 0 !important;
+}
+.react-datepicker__days :first-child {
+  margin-left: 10px;
+}
+.react-datepicker__day-name {
+  margin: 0 !important;
+  width: 24px !important;
+  font-size: 14px;
+}
+.react-datepicker__header,
+.react-datepicker,
+.react-datepicker-popper {
+  width: 100% !important;
+}
+.react-datepicker__current-month,
+.react-datepicker__month-container {
+  width: auto !important;
+}
+
+.dialog-hdg {
+  font-weight: bolder;
+  font-size: 25px;
+  color: #000000;
+  line-height: initial;
+}
+
+.item {
+  position: relative;
+  font-weight: bold;
+  color: #000000;
+}
+
+.bor {
+  border-radius: 25px;
+}
+.epurchase-txt {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  outline: none;
+  color: #5f5f5f !important;
+  background-color: white;
+  box-shadow: 0px 3px 6px #0193ad80;
+  overflow: hidden;
+}
+.epurchase-lbl {
+  color: #000 !important;
+  margin-bottom: 0 !important;
+}
+.epurchase-frmhdgDiv {
+  color: rgba(255, 0, 0, 0.726);
+}
+.epurchase-outer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.epurchase-innerDiv {
+  display: flex;
+  align-items: center;
+}
+.epurchase-outer p {
+  margin: 0px;
+}
+.epurchase-innerDiv div {
+  margin: 0px 10px;
+}
+.item span {
+  color: red;
+}
+
+.week {
+  display: flex;
+  justify-content: space-between;
+}
+
+.colums {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.colums div {
+  width: 48%;
+}
+
+.btn-block {
+  text-align: center;
+}
+
+.button3 {
+  background-color: #1c87c9;
+  color: white;
+}
+.btn-cancel {
+  background-color: white !important;
+  color: #1c87c9 !important;
+}
+.btn-upload {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.btn-upload .MuiSvgIcon-root {
+  font-size: 20px;
+}
+.btn-upload p {
+  margin-left: -15px;
+}
+#outer {
+  width: 100%;
+  text-align: center;
+}
+.inner {
+  display: inline-block;
+  margin-top: 0 !important;
+}
+@media (max-width: 992px) {
+  .epurchase-frmhdgDiv {
+    width: 100% !important;
+  }
+  .epurchase-outer {
+    flex-direction: column;
+  }
+  .epurchase-innerDiv {
+    flex-direction: column;
+  }
+  .epurchase-innerDiv div {
+    margin: 0px;
+  }
+  .inner {
+    margin-top: 10px !important;
+  }
+}
+@media (min-width: 568px) {
+  .name-item,
+  .city-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .name-item input,
+  .name-item div {
+    width: calc(50% - 20px);
+  }
+  .name-item div input {
+    width: 97%;
+  }
+  .name-item div label {
+    display: block;
+    padding-bottom: 5px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .columns {
+    display: flex;
+    flex: 1;
+  }
+  .main {
+    flex: 1;
+    order: 2;
+  }
+  .sidebar-first {
+    width: 20%;
+    order: 1;
+  }
+  .sidebar-second {
+    width: 20%;
+    order: 3;
+  }
+}
